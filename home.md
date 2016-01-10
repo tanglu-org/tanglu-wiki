@@ -6,7 +6,7 @@
 
 |![Clipboard](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Clipboard.png) |![Users](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Users.png)|![Keyboard](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Keyboard.png)|![Images](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Images.png)|
 |:-:|:-:|:-:|:-:|
-|**[Work items](/Category:TaskList)**|**[Teams](/Teams)**|**[Development](/Development)**|**[Artwork](/Artwork)**|
+|**[Work items](/TaskLists)**|**[Teams](/Teams)**|**[Development](/Development)**|**[Artwork](/Artwork)**|
 |Do you want to help? Great! Pick one of the tasks from the Tasklist to get started. If there are people working on stuff, don't hesitate to ask if you can help!|To get informations about the teams which build Tanglu, take a look at the Teams page.|If you want to get started in Tanglu Development, check out the Development page.|You can add new artwork to the Artwork page.|
 
 <br />
