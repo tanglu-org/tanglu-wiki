@@ -11,40 +11,40 @@ Welcome to the Tanglu Wiki!
 *This is a developer wiki. For general information on Tanglu please check our [Project Page](http://www.tanglu.org). This wiki contains information specific to Tanglu. User information and tutorials about general applications etc. that are valid for Tanglu and Debian should be maintained right in the [Debian Wiki](http://wiki.debian.org).*</span>
 
 <br/>
-<table cellpadding="10" style="text-align: center;margin: auto;">
+<table cellpadding="10" style="text-align: center; margin: auto;">
 <tbody>
   <tr>
-  <td style="width:25%;">
+  <td align="center" style="width:25%;">
     <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Clipboard.png" alt="Clipboard">
   </td>
   
-  <td style="width:25%;">
+  <td align="center" style="width:25%;">
     <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Users.png" alt="Users">
   </td>
   
-  <td style="width:25%;">
+  <td align="center" style="width:25%;">
     <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Keyboard.png" alt="Keyboard">
   </td>
   
-  <td style="width:25%;">
+  <td align="center" style="width:25%;">
     <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Images.png" alt="Images">
   </td>
 </tr>
 
 <tr>
-  <td>
+  <td align="center">
     <b>[Work Items](/TaskLists)</b>
   </td>
   
-  <td>
+  <td align="center">
     <b>[Teams](/Teams)</b>
   </td>
   
-  <td>
+  <td align="center">
     <b>[Development](/Development)</b>
   </td>
   
-  <td>
+  <td align="center">
     <b>[Artwork](/Artwork)</b>
   </td>
 </tr>
@@ -74,39 +74,42 @@ Welcome to the Tanglu Wiki!
 <tr>
   <td style="height:30px;" colspan="4"></td>
 </tr>
-
 <!-- BEGIN second row -->
 <tr>
-  <td style="width:25%;">
+  <td align="center" style="width:25%;">
+    <br/><br/>
     <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Flag.png" alt="Flag">
   </td>
 
-  <td style="width:25%;">
+  <td align="center" style="width:25%;">
+    <br/><br/>
     <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Lifebuoy.png" alt="Lifebuoy">
   </td>
   
-  <td style="width:25%;">
+  <td align="center" style="width:25%;">
+    <br/><br/>
     <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Library.png" alt="Library">
   </td>
   
-  <td style="width:25%;">
+  <td align="center" style="width:25%;">
+    <br/><br/>
     <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Plus-icon.png" alt="Plus">
   </td>
 </tr>
 <tr>
-  <td>
+  <td align="center">
     <b>[Translations](/Translations)</b>
   </td>
   
-  <td>
+  <td align="center">
     <b>[Help](/Help)</b>
   </td>
   
-  <td>
+  <td align="center">
     <b>[Policy](/Policy)</b>
   </td>
   
-  <td>
+  <td align="center">
     <b>[Add new](/Scratchpad)</b>
   </td>
 </tr>
