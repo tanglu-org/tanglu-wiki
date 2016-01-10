@@ -9,7 +9,7 @@
   </tr>
   </thead>
   <tbody>
-  {{#if todo }}
+  {{#if todo}}
     <tr class="danger">
       <th scope="row">Todo</th>
   {{else if inprogress}}
