@@ -1,12 +1,27 @@
 ---
 title: DasyatisReleaseSchedule
-permalink: /DasyatisReleaseSchedule/
+import:
+  - templates/releasescheduletable
+
+events:
+  - done: yes
+    component: systemd
+    description: Fix Debian bug#738965 in Tanglu
+        (and ideally Debian as well) by providing systemd units
+    contact: Nobody (@null)
+
+  - inprogress: yes
+    component: debian-installer
+    description: Provide a working debian installer
+    contact: Philip Muskovac (@yofel)
 ---
 
 Dasyatis kuhlii Release Schedule
 --------------------------------
 
 Please note that we can't really do a perfect release schedule - so many things are new and we have few contributors. Some events on this table have been adjusted (and will be adjusted), some have been reconstructed from the past to have a complete schedule.
+
+{{> templates/releasescheduletable schedule_events=events}}
 
 <table>
 <colgroup>
