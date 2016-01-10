@@ -1,7 +1,7 @@
 ---
 title: AequoreaTaskList
 import:
-  - templates/featuretable
+  - templates/tasktable
 
 core-tasks:
   - done: yes
@@ -96,27 +96,27 @@ This is an (incomplete) list of stuff which needs to be done for Tanglu Aequorea
 Core
 ----
 
-{{> templates/featuretable tasks=core-tasks}}
+{{> templates/tasktable tasks=core-tasks}}
 
 Desktop/KDE
 -----------
 
-{{> templates/featuretable tasks=kde-tasks}}
+{{> templates/tasktable tasks=kde-tasks}}
 
 Desktop/GNOME
 -------------
 
-{{> templates/featuretable tasks=gnome-tasks}}
+{{> templates/tasktable tasks=gnome-tasks}}
 
 Infrastructure
 --------------
 
-{{> templates/featuretable tasks=infrastructure-tasks}}
+{{> templates/tasktable tasks=infrastructure-tasks}}
 
 Artwork
 -------
 
-{{> templates/featuretable tasks=artwork-tasks}}
+{{> templates/tasktable tasks=artwork-tasks}}
 
 
 ---
