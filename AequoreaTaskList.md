@@ -1,6 +1,6 @@
 ---
 import:
-  - templates/featuretable
+  - tmpl_featuretable
 task:
   - status: Joe
     component: CEO
@@ -20,7 +20,7 @@ Core
 ----
 
 {{#each task}}
-  {{> templates/featuretable}}
+  {{> tmpl_featuretable}}
 {{/each}}
 
 
