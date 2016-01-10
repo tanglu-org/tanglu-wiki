@@ -119,4 +119,5 @@ Artwork
 {{> templates/featuretable tasks=artwork-tasks}}
 
 
-[category:TaskList](/category:TaskList "wikilink")[category:Aequorea](/category:Aequorea "wikilink")
+---
+[category:TaskList](/TaskLists) | [category:Aequorea](/Aequorea)
