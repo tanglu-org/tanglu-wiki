@@ -9,13 +9,13 @@
   </tr>
   </thead>
   <tbody>
-  {{#if status == "todo" }}
+  {{#if todo }}
     <tr class="danger">
       <th scope="row">Todo</th>
-  {{else if status == "inprogress"}}
+  {{else if inprogress}}
     <tr class="warning">
       <th scope="row">In Progress</th>
-  {{else if status == "done"}}
+  {{else if done}}
     <tr class="success">
       <th scope="row">Done</th>
   {{else}}
