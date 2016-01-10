@@ -3,7 +3,7 @@ title: Main Page de
 permalink: /Main_Page/de/
 ---
 
-__NOTOC__ Übersetzungen: [English](/Main_Page "wikilink") [Français](/Main_Page/fr "wikilink")
+__NOTOC__ Übersetzungen: [English](/home) | [Français](/home/fr)
 
 Willkommen im Tanglu Wiki!
 ==========================
