@@ -1,10 +1,11 @@
 ---
 import:
   - templates/featuretable
-task:
-  - status: Joe
-    component: CEO
-    description: sac
+core-tasks:
+  - done: yes
+    component: systemd
+    description: Systemd integration into the Tanglu base-system
+    contact: Matthias Klumpp (@ximion)
   - status: John
     component: CFO
     description: sdv
@@ -19,14 +20,7 @@ This is an (incomplete) list of stuff which needs to be done for Tanglu Aequorea
 Core
 ----
 
-{{#each task}}
-  {{> templates/featuretable}}
-{{/each}}
-
-
-
-| Status | Component | Description | Primary contact |
-|--------|-----------|-------------|-----------------|
+{{> templates/featuretable tasks=core-tasks}}
 
 Desktop/KDE
 -----------
