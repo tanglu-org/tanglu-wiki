@@ -1,6 +1,14 @@
 ---
+import:
+  - tmpl_featuretable
+task:
+  - status: Joe
+    component: CEO
+    description: sac
+  - status: John
+    component: CFO
+    description: sdv
 title: AequoreaTaskList
-permalink: /AequoreaTaskList/
 ---
 
 Tasks for the Aequorea release
@@ -10,6 +18,12 @@ This is an (incomplete) list of stuff which needs to be done for Tanglu Aequorea
 
 Core
 ----
+
+{{#each task}}
+  {{> tmpl_featuretable}}
+{{/each}}
+
+
 
 | Status | Component | Description | Primary contact |
 |--------|-----------|-------------|-----------------|
