@@ -3,7 +3,7 @@ title: Main Page fr
 permalink: /Main_Page/fr/
 ---
 
-__NOTOC__ Traduction: [English](/Main_Page "wikilink") [Deutsch](/Main_Page/de "wikilink")
+Traduction: [English](/home) | [Deutsch](/home/de)
 
 Translation FR : Work In Progress
 
