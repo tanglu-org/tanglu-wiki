@@ -9,6 +9,8 @@
   </tr>
   </thead>
   <tbody>
+  {{#each tasks}}
+  
   {{#if todo}}
     <tr class="danger">
       <th scope="row">Todo</th>
@@ -26,5 +28,7 @@
       <td>{{description}}</td>
       <td>{{contact}}</td>
     </tr>
+    
+  {{/each}}
   </tbody>
 </table>
