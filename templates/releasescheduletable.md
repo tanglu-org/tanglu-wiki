@@ -2,7 +2,7 @@
 <table class="table table-hover table-striped">
   <thead>
   <tr>
-    <th>Date</th>
+    <th width="146">Date</th>
     <th>Event</th>
     <th>Art tasks</th>
     <th>PR tasks</t>
