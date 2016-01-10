@@ -23,9 +23,9 @@
     <tr>
   {{/if}}
       <th width="146" scope="row">{{date}}</th>
-      <td style="vertical-align: middle;">{{event}}</td>
-      <td style="vertical-align: middle;">{{art-task}}</td>
-      <td style="vertical-align: middle;">{{pr-task}}</td>
+      <td valign="center">{{event}}</td>
+      <td valign="center">{{art-task}}</td>
+      <td valign="center">{{pr-task}}</td>
     </tr>
     
   {{/each}}
