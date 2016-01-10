@@ -9,8 +9,8 @@
   </tr>
   </thead>
   <tbody>
-  {{#each tasks}}
-  
+  {{#each schedule_events}}
+
   {{#if stage3}}
     <tr class="danger">
   {{else if stage2}}
