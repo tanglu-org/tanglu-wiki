@@ -4,16 +4,61 @@ import:
   - templates/releasescheduletable
 
 events:
-  - done: yes
-    component: systemd
-    description: Fix Debian bug#738965 in Tanglu
-        (and ideally Debian as well) by providing systemd units
-    contact: Nobody (@null)
+  - date:  04. August 2015
+    event: Dasyatis branched off from Chromodoris
 
-  - inprogress: yes
-    component: debian-installer
-    description: Provide a working debian installer
-    contact: Philip Muskovac (@yofel)
+  - date:  06. August 2015
+    event: Automatic syncs from Debian Testing enabled.
+
+  - date:  26. October 2015
+    stage1: active
+    event: Alpha Snapshot release
+    pr-task: Announce on blog, social media (👪) & mailing list.
+        Send out press release.
+
+  - date:  28. December 2015
+    stage1: active
+    event: Debian Import Freeze
+
+  - date:  24. January 2016
+    stage2: active
+    event: Initial QA round completed.
+
+  - date:  26. January 2016
+    stage2: active
+    event: Feature freeze.
+    art-task: Prepare installer slide show images
+    pr-task: Announce on social media & mailing list.
+
+  - date:  02. February 2016
+    stage3: active
+    event: Beta images built
+    pr-task: Announce on blog, social media & mailing list.
+        Send out press release. Ask for testing on social media.
+
+  - date:  20. February 2016
+    stage3: active
+    event: Installer testing completed
+    pr-task: Announce on social media and ask for testing.
+
+  - date:  22. February 2016
+    stage3: active
+    event: Final QA round completed
+
+  - date:  24. February 2016
+    stage3: active
+    event: Release candidate images built.
+        Final freeze, write release notes!
+    art-task: Prepare banners for social media
+    pr-task: Announce on blog, social media & mailing list.
+        Send out press release.
+
+  - date:  28. February 2016
+    stage4: active
+    event: Tanglu 4.0 (Dasyatis kuhlii) released!
+    art-task: Change banner graphics on social media
+    pr-task: Announce on blog, social media & mailing list.
+        Send out press release.
 ---
 
 Dasyatis kuhlii Release Schedule
