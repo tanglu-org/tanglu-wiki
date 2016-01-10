@@ -49,7 +49,6 @@ artwork-tasks:
     component: plymouth
     description: Create a Tanglu Bartholomea wallpaper
     contact: Thomas Funk (@gonzomcgraw)
-
 ---
 
 Tasks for the Tanglu 2 (Bartholomea Annulata) release
