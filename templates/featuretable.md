@@ -1,5 +1,5 @@
 <!-- FeatureTable -->
-<table class="table table-hover">
+<table class="table table-hover table-striped">
   <thead>
   <tr>
     <th>Status</th>
@@ -24,9 +24,9 @@
     <tr>
       <th scope="row">Unknown</th>
   {{/if}}
-      <td>{{component}}</td>
-      <td>{{description}}</td>
-      <td>{{contact}}</td>
+      <td style="vertical-align: middle;">{{component}}</td>
+      <td style="vertical-align: middle;">{{description}}</td>
+      <td style="vertical-align: middle;">{{contact}}</td>
     </tr>
     
   {{/each}}
