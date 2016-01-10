@@ -22,7 +22,7 @@
   {{else}}
     <tr>
   {{/if}}
-      <th width="146" scope="row">{{date}}</th>
+      <th valign="center" width="146" scope="row">{{date}}</th>
       <td valign="center">{{event}}</td>
       <td valign="center">{{art-task}}</td>
       <td valign="center">{{pr-task}}</td>
