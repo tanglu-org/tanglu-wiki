@@ -13,7 +13,7 @@ events:
   - date:  26. October 2015
     stage1: active
     event: Alpha Snapshot release
-    pr-task: Announce on blog, social media (👪) & mailing list.
+    pr-task: Announce on blog, social media df & mailing list.
         Send out press release.
 
   - date:  28. December 2015
