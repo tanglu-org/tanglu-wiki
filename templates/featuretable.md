@@ -1,3 +1,4 @@
+<!-- FeatureTable -->
 <table class="table table-hover">
   <thead>
   <tr>
