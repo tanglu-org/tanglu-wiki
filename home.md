@@ -1,17 +1,132 @@
-# Welcome to the Tanglu Wiki!
+---
+title: Main Page
+---
+Localizations: [German](/home/de) | [Français](/home/fr "wikilink")
 
-***Note: ***
 
-*This is a developer wiki. For general information on Tanglu please check our [Project Page](http://www.tanglu.org). This wiki contains information specific to Tanglu. User information and tutorials about general applications etc. that are valid for Tanglu and Debian should be maintained right in the [Debian Wiki](http://wiki.debian.org Debian Wiki).*
+Welcome to the Tanglu Wiki!
+===========================
 
-|![Clipboard](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Clipboard.png) |![Users](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Users.png)|![Keyboard](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Keyboard.png)|![Images](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Images.png)|
-|:-:|:-:|:-:|:-:|
-|**[Work items](/TaskLists)**|**[Teams](/Teams)**|**[Development](/Development)**|**[Artwork](/Artwork)**|
-|Do you want to help? Great! Pick one of the tasks from the Tasklist to get started. If there are people working on stuff, don't hesitate to ask if you can help!|To get informations about the teams which build Tanglu, take a look at the Teams page.|If you want to get started in Tanglu Development, check out the Development page.|You can add new artwork to the Artwork page.|
+<span style="color: grey;">***Note:***
+*This is a developer wiki. For general information on Tanglu please check our [Project Page](http://www.tanglu.org). This wiki contains information specific to Tanglu. User information and tutorials about general applications etc. that are valid for Tanglu and Debian should be maintained right in the [Debian Wiki](http://wiki.debian.org).*</span>
 
-<br />
+<br/>
+<table cellpadding="10" style="text-align: center;margin: auto;">
+<tbody>
+  <tr>
+  <td style="width:25%;">
+    <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Clipboard.png" alt="Clipboard">
+  </td>
+  
+  <td style="width:25%;">
+    <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Users.png" alt="Users">
+  </td>
+  
+  <td style="width:25%;">
+    <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Keyboard.png" alt="Keyboard">
+  </td>
+  
+  <td style="width:25%;">
+    <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Images.png" alt="Images">
+  </td>
+</tr>
 
-|![Flag](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Flag.png)|![Lifebuoy](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Lifebuoy.png)|![Library](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Library.png)|![Plus](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Plus-icon.png)|
-|:-:|:-:|:-:|:-:|
-|**[Translations](/Translations)**|**[Help](/Help)**|**[Policy](/Policy)**|**[Add new](/Scratchpad)**|
-|Make Tanglu international! Check out the Translations page.|Need some assistance? Check out our Help section|View the policy in the Policy section. The documents are currently in progress, and will later be moved out of the wiki.|You can add new stuff to the Scratchpad.|
+<tr>
+  <td>
+    <b>[Work Items](/TaskLists)</b>
+  </td>
+  
+  <td>
+    <b>[Teams](/Teams)</b>
+  </td>
+  
+  <td>
+    <b>[Development](/Development)</b>
+  </td>
+  
+  <td>
+    <b>[Artwork](/Artwork)</b>
+  </td>
+</tr>
+<tr style="vertical-align:top;text-align:left;">
+  <td>
+    Do you want to help? Great! Pick one of the tasks from the
+    [Tasklist](/TaskLists) to get started.
+    If there are people working on stuff, don't hesitate to ask if you
+    can help!
+  </td>
+  
+  <td>
+    To get information about the teams which build Tanglu, take a look
+    at the [Teams](/Teams) page.
+  </td>
+  
+  <td>
+    If you want to get started in Tanglu Development, check out the
+    [Development](/Development) page.
+  </td>
+
+  <td>
+    We are always looking for talented artists!
+    You can add new artwork to the [Artwork](/Artwork) page.
+  </td>
+</tr>
+<tr>
+  <td style="height:30px;" colspan="4"></td>
+</tr>
+
+<!-- BEGIN second row -->
+<tr>
+  <td style="width:25%;">
+    <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Flag.png" alt="Flag">
+  </td>
+
+  <td style="width:25%;">
+    <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Lifebuoy.png" alt="Lifebuoy">
+  </td>
+  
+  <td style="width:25%;">
+    <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Library.png" alt="Library">
+  </td>
+  
+  <td style="width:25%;">
+    <img width="75" height="75" src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Plus-icon.png" alt="Plus">
+  </td>
+</tr>
+<tr>
+  <td>
+    <b>[Translations](/Translations)</b>
+  </td>
+  
+  <td>
+    <b>[Help](/Help)</b>
+  </td>
+  
+  <td>
+    <b>[Policy](/Policy)</b>
+  </td>
+  
+  <td>
+    <b>[Add new](/Scratchpad)</b>
+  </td>
+</tr>
+  <td>
+    Make Tanglu international! Check out the [Translations](/Translations) page.
+  </td>
+  
+  <td>
+    Need some assistance? Check out our [Help](/Help) and [UserHelp](/UserHelp) sections.
+  </td>
+  
+  <td>
+    View the policy in the [Policy](/Policy) section.
+    The documents are currently in progress, and will later be moved
+    out of the wiki.
+  </td>
+  
+  <td>
+    You can add new stuff to the [Scratchpad](/Scratchpad).
+  </td>
+</tr>
+</tbody>
+</table>
