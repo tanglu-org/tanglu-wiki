@@ -11,12 +11,14 @@
   <tbody>
   {{#each schedule_events}}
 
-  {{#if stage3}}
-    <tr class="danger">
+  {{#if stage1}}
+    <tr class="success">
   {{else if stage2}}
     <tr class="warning">
-  {{else if stage1}}
-    <tr class="success">
+  {{else if stage3}}
+    <tr class="danger">
+  {{else if stage4}}
+    <tr class="info">
   {{else}}
     <tr>
   {{/if}}
