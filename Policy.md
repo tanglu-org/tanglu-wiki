@@ -6,7 +6,7 @@ permalink: /Policy/
 Tanglu Policy
 =============
 
-These are the main documents describing the Tanglu project policies. You may want to read about the [project goals](/project-goals) first.
+These are the main documents describing the Tanglu project policies. You may want to read about the [project goals](/policy/project-goals) first.
 
 This stuff is under construction! The final policy is maintained in a Git repository, so these Wiki pages are used for brainstorming at time (until the real policy document has been written).
 
