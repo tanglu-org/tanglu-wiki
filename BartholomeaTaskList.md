@@ -71,7 +71,7 @@ Desktop/KDE
 Desktop/GNOME
 -------------
 
-{{> templates/featuretable tasks=gnome-tasks}}
+{{> templates/tasktable tasks=gnome-tasks}}
 
 
 Infrastructure
