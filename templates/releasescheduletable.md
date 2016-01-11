@@ -2,7 +2,7 @@
 <table class="table table-hover table-striped">
   <thead>
   <tr>
-    <th width="146">Date</th>
+    <th nowrap="nowrap">Date</th>
     <th>Event</th>
     <th>Art tasks</th>
     <th>PR tasks</t>
@@ -22,7 +22,7 @@
   {{else}}
     <tr>
   {{/if}}
-      <th valign="center" width="146" scope="row">{{date}}</th>
+      <th valign="center" nowrap="nowrap" scope="row">{{date}}</th>
       <td valign="center">{{event}}</td>
       <td valign="center">{{art-task}}</td>
       <td valign="center">{{pr-task}}</td>
