@@ -8,7 +8,7 @@ Tanglu 3.0 Release Notes
 
 We are proud to announce the release of Tanglu 3.0 (Chromodoris willani). For this release, we support the KDE Plasma flavour. A GNOME flavour is available as a preview as well.
 
-__TOC__
+[TOC]
 
 Upgrading
 ---------
