@@ -15,7 +15,7 @@ This page should be a place to putting down ideas and suggestions to adapt Calam
 Graphical surface
 =================
 
-[300px|thumb|left| Start screen of Calamares](/File:Start_screen1.jpg "wikilink")
+![](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/images/Start_screen1.jpg)
 
 This is the current start screen of calamares (KDE live image 03/16/2015).
 
