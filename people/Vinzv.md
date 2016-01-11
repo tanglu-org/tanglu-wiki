@@ -1,7 +1,8 @@
 ---
 title: User:Vinzv
-permalink: /User:Vinzv/
 ---
+
+# User: Vinzv
 
 In charge for Tanglu PR.
 
