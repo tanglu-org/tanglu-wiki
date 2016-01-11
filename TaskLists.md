@@ -1,5 +1,7 @@
 Development task lists
 ======================
 
-* [AequoraTaskList](/AequoreaTaskList)
-* [BartholomeaTaskList](/BartholomeaTaskList)
+ * [AequoraTaskList](/AequoreaTaskList)
+ * [BartholomeaTaskList](/BartholomeaTaskList)
+ * ChromodorisTaskList
+ * [DasyatisTaskList](/DasyatisTaskList)
