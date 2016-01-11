@@ -15,7 +15,7 @@ This page should be a place to putting down ideas and suggestions to adapt Calam
 Graphical surface
 =================
 
-![](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/images/Start_screen1.jpg)
+<img src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/images/Start_screen1.jpg" height="300px" />
 
 This is the current start screen of calamares (KDE live image 03/16/2015).
 
@@ -31,4 +31,4 @@ Functionality
 -   Only en_US.UTF-8 as system locale is currently available.
 -   The minimum requirements for Tanglu are a little bit high (1GB RAM) @_@
 
-[300px|thumb|none| Requirements check](/File:Min_requirements.png "wikilink")
+<img src="https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/images/Min_requirements.png" height="300px" />
