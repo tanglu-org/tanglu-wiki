@@ -6,7 +6,8 @@ import:
 core-tasks:
   - inprogress: yes
     component: live-build / installer
-    description: Implement UEFI support (see 
+    description: Implement UEFI support
+        (see [TT: #159](https://tracker.tanglu.org/T159))
     contact: Matthias Klumpp (@ximion)
 
 
