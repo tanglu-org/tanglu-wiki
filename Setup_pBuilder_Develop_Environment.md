@@ -13,9 +13,9 @@ Creating a GPG key
 
 First of all you need a GPG key to sign the created/modified packages. To do this follow the instructions in [Debian's Keysigning](https://wiki.debian.org/Keysigning) tutorial.
 
-|                                                   |                                                                                                                                                                                                                                                                                                |
-|---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [left|Important!](/File:Important.png "wikilink") | <span style="color:blue">As Tanglu is a Debian derivate the key should be at least 2048 bits long (better 4096 bits) and created with SHA2 hashing algorithm. So please follow in <strong>Step 1: Create a RSA keypair</strong> the creation under <strong>creating a keypair</strong>.</span> |
+|    |        |
+|----|--------|
+| ![](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Important.png) | <span style="color:blue">As Tanglu is a Debian derivate the key should be 4096 bits long (at least 2048 bits) and created with SHA2 hashing algorithm. So please follow in <strong>Step 1: Create a RSA keypair</strong> the creation under <strong>creating a keypair</strong>.</span> |
 
 For more information about GPG see also [GnuPG Arch Wiki](https://wiki.archlinux.org/index.php/GnuPG) and [Ubuntu's GnuPrivacyGuardHowto](https://help.ubuntu.com/community/GnuPrivacyGuardHowto).
 
@@ -43,13 +43,13 @@ If you are not on a Tanglu distribution, but on Debian or a derivative (e.g. Ubu
 
     $ sudo apt-get install pbuilder devscripts util-linux
 
-|                                        |                                                                                                                                                                                                                                      |
-|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [left|Note](/File:Note.png "wikilink") | <span style="color:blue"><strong>devscripts</strong> is not necessary to install along with pbuilder, however if you are serious about using pbuilder and creating and maintaining packages for Tanglu you should install it.</span> |
+|    |        |
+|----|--------|
+| ![](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Note.png) | <strong>devscripts</strong> is not necessary to install along with pbuilder, however if you are serious about using pbuilder and creating and maintaining packages for Tanglu you should install it. |
 
-|                                        |                                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [left|Note](/File:Note.png "wikilink") | <span style="color:blue">Some packages have broken build systems, which check for kernel architecture instead of the compiler's host architecture. For that we install <strong>util-linux</strong>. With the command <strong>linux32</strong> infront of the i386 build command will be used to fool the build system to think it is running on an i386 rather than an amd64 kernel.</span> |
+|    |        |
+|----|--------|
+| ![](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Note.png) | Some packages have broken build systems, which check for kernel architecture instead of the compiler's host architecture. For that we install <strong>util-linux</strong>. With the command <strong>linux32</strong> infront of the i386 build command will be used to fool the build system to think it is running on an i386 rather than an amd64 kernel. |
 
 Edit /etc/sudoers
 -----------------
@@ -58,6 +58,7 @@ We need some environment variables used as root but set as user. Also **pdebuild
 
 So add with **visudo** the red highlighted lines:
 
+<pre>
 \#
 \# This file MUST be edited with the 'visudo' command as root.
 \#
@@ -66,32 +67,29 @@ So add with **visudo** the red highlighted lines:
 \#
 \# See the man page for details on how to write a sudoers file.
 \#
-<span style="color:red; font-weight:bold">Defaults env_reset,env_keep="DIST ARCH CONCURRENCY_LEVEL"</span>
+<font color="red" weight="bold">Defaults env_reset,env_keep="DIST ARCH CONCURRENCY_LEVEL"</font>
 Defaults mail_badpass
 Defaults secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 \# Host alias specification
 \# User alias specification
 \# Cmnd alias specification
-<span style="color:red; font-weight:bold">Cmnd_Alias PBUILDER = /usr/sbin/pbuilder, /usr/bin/pdebuild, /usr/bin/debuild-pbuilder</span>
+<font color="red" weight="bold">Cmnd_Alias PBUILDER = /usr/sbin/pbuilder, /usr/bin/pdebuild, /usr/bin/debuild-pbuilder</font>
 \# User privilege specification
 root ALL=(ALL:ALL) ALL
-<span style="color:red; font-weight:bold">\[your_user\] ALL=(ALL) PBUILDER</span>
+<font color="red" weight="bold">\[your_user\] ALL=(ALL) PBUILDER</font>
 \# Allow members of group sudo to execute any command
 %sudo ALL=(ALL:ALL) ALL
 \# See sudoers(5) for more information on "\#include" directives:
 \#includedir /etc/sudoers.d
+</pre>
 
-|                                        |                                                                                                  |
-|----------------------------------------|--------------------------------------------------------------------------------------------------|
-| [left|Note](/File:Note.png "wikilink") | <span style="color:blue">To deactivate password retrieval change the line with \[your_user\] to
+|    |        |
+|----|--------|
+| ![](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Note.png) | To deactivate password retrieval change the line with \[your_user\] to <code>[your_user] ALL=(ALL) SETENV: NOPASSWD: PBUILDER</code> |
 
-                                              [your_user] ALL=(ALL) SETENV: NOPASSWD: PBUILDER
-
-                                          </span>                                                                                           |
-
-|                                        |                                                                                                                                                                                                        |
-|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [left|Note](/File:Note.png "wikilink") | <span style="color:blue">The "Defaults" line contains instructions for keeping the values of variables DIST, ARCH and CONCURRENCY_LEVEL. Keep those variables in mind, we will use them later.</span> |
+|   |       |
+|-----------|-------|
+| ![](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Note.png) | <span style="color:blue">The "Defaults" line contains instructions for keeping the values of variables DIST, ARCH and CONCURRENCY_LEVEL. Keep those variables in mind, we will use them later.</span> |
 
 Configure pbuilder
 ------------------
@@ -254,9 +252,11 @@ For later signing the $NAME directory have to be owner changed:
 
     $ sudo chown -R $USER /var/cache/pbuilder/[$DIST-$ARCH]
 
-|                                                   |                                                                        |
-|---------------------------------------------------|------------------------------------------------------------------------|
-| [left|Important!](/File:Important.png "wikilink") | <span style="color:blue">Do this for each pbuilder environment.</span> |
+
+|    |        |
+|----|--------|
+| ![](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Important.png) | Do this for each pbuilder environment. |
+
 
     # additional build results to copy out of the package build area
     #ADDITIONAL_BUILDRESULTS=(xunit.xml .coverage)
@@ -434,9 +434,9 @@ Last but not least make the scripts executable
 
     $ chmod 755 /var/cache/pbuilder/hooks.d/*
 
-|                                        |                                                                                                                           |
-|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [left|Note](/File:Note.png "wikilink") | <span style="color:blue">You will find some others hook scripts under /usr/share/doc/pbuilder/examples/ if needed.</span> |
+|    |        |
+|----|--------|
+| ![](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Note.png) | You will find some others hook scripts under /usr/share/doc/pbuilder/examples/ if needed. |
 
 ### Extra Packages and Signing
 
@@ -444,11 +444,9 @@ Last but not least make the scripts executable
     # chroot on pbuilder create.
     EXTRAPACKAGES="apt-utils ccache vim"
 
-|                                        |                                                                                                     |
-|----------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [left|Note](/File:Note.png "wikilink") | <span style="color:blue"> <strong>apt-utils</strong> is needed for e.g. generating package indexes.
-                                          <strong>ccache</strong> is a compiler cache to save time while building.
-                                          </span>                                                                                              |
+|    |        |
+|----|--------|
+| ![](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Note.png) | <strong>apt-utils</strong> is needed for e.g. generating package indexes.<br/> <strong>ccache</strong> is a compiler cache to save time while building. |
 
     # Specify the packages to be removed on creation of base.tgz
     REMOVEPACKAGES=""
@@ -548,9 +546,9 @@ If sources only requested use "-S -sa".
     # The classic resolver based on apt
     PBUILDERSATISFYDEPENDSCMD="/usr/lib/pbuilder/pbuilder-satisfydepends-classic"
 
-|                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|-------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [left|Important!](/File:Warning.png "wikilink") | <span style="color:blue">Don't use the build-dependency resolver based on gdebi because this resolver uses gdebi outside the chroot to exec dpkg inside the chroot. If you don't have the libs to exec the i386 dpkg (especially if you don't even have libc6:i386) you will get File Not Found when trying to exec it. See also <ins>[here](http://askubuntu.com/questions/323557/resolving-dependencies-inside-a-pbuilder-environment-instead-of-on-the-host-syst)</ins></span> |
+|    |        |
+|----|--------|
+| ![](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Warning.png) | Don't use the build-dependency resolver based on gdebi because this resolver uses gdebi outside the chroot to exec dpkg inside the chroot. If you don't have the libs to exec the i386 dpkg (especially if you don't even have libc6:i386) you will get File Not Found when trying to exec it. See also [here](http://askubuntu.com/questions/323557/resolving-dependencies-inside-a-pbuilder-environment-instead-of-on-the-host-syst) |
 
     # Arguments for $PBUILDERSATISFYDEPENDSCMD.
     # PBUILDERSATISFYDEPENDSOPT=()
@@ -577,9 +575,9 @@ If sources only requested use "-S -sa".
 
 Building of packages inside the chroot as a regular user rather than root. This can be important since some packages won't build correctly as root.
 
-|                                             |                                                                                                                                                                                                                                                                                                          |
-|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [left|Note](/File:Important.png "wikilink") | <span style="color:blue">This won't create the user for pbuilder base packages that already exist. For those base packages the user will need to be added manually **inside** chroot. See <ins>[Troubleshooting: Add User 'pbuilder' in chroot](/#Add_User_'pbuilder'_in_chroot "wikilink")</ins></span> |
+|    |        |
+|----|--------|
+| ![](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Important.png) | This won't create the user for pbuilder base packages that already exist. For those base packages the user will need to be added manually **inside** chroot. See [Troubleshooting: Add User 'pbuilder' in chroot](/#Add_User_'pbuilder'_in_chroot) |
 
 ### Debootstrap & Aptkeyrings
 
@@ -636,9 +634,9 @@ For **amd64** build environment:
 
     $ sudo DIST=bartholomea ARCH=amd64 pbuilder create
 
-|                                        |                                                                                                                                                                                                              |
-|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [left|Note](/File:Note.png "wikilink") | <span style="color:blue">These settings are for the stable release. If you want to build packages for an upcoming release replace "bartholomea" with the development version (currently chromodoris).</span> |
+|    |        |
+|----|--------|
+| ![](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Note.png) | These settings are for the stable release. If you want to build packages for an upcoming release replace "bartholomea" with the development version (currently dasyatis). |
 
 Add staging suite
 -----------------
@@ -779,9 +777,9 @@ If you change anything in the .pbuilderrc you have to update **ALL** chroot envi
 
     $ sudo DIST=[distribution] ARCH=[architecture] pbuilder update --override-config
 
-|                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [left|Note](/File:Important.png "wikilink") | <span style="color:blue">For **staging** you have to backup your /etc/apt/sources.list as described in <ins>[Add staging suite](/#Add_staging_suite "wikilink")</ins> because --override-config will remove the development entries! If you have add the hook script **E50restore-sources.list** described under <ins>[Hook directory and Files](/#Hook_directory_and_Files "wikilink")</ins>, you don't need to login with --save-after-login and add them again anymore. Also the script makes the needed "apt-get update" inside the chroot for you.</span> |
+|    |        |
+|----|--------|
+| ![](https://raw.githubusercontent.com/tanglu-org/tanglu-wiki/master/files/stock-images/Important.png) | For **staging** you have to backup your /etc/apt/sources.list as described in <ins>[Add staging suite](/#Add_staging_suite)</ins> because --override-config will remove the development entries! If you have add the hook script **E50restore-sources.list** described under <ins>[Hook directory and Files](/#Hook_directory_and_Files)</ins>, you don't need to login with --save-after-login and add them again anymore. Also the script makes the needed "apt-get update" inside the chroot for you. |
 
 Speed up Package Installation
 -----------------------------
@@ -823,8 +821,7 @@ Bugs and Improvements
 =====================
 
 If you find bugs or have improvements send me an [email](mailto:t.funk@web.de). I would be happy to hear from you ^^
-
--- Thomas --
+  --- Thomas
 
 Thanks
 ======
