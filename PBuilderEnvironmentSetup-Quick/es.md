@@ -1,11 +1,11 @@
 ---
-title: Configurar un entorno de trabajo básico para pBuilder
+title: Configurar un entorno de trabajo básico para pbuilder
 permalink: /SetUpPBuilderEnvironment/es
 ---
 
-# Configurar un entorno de trabajo básico para pBuilder
+# Configurar un entorno de trabajo básico para pbuilder
 
-Esta página explica cómo configurar un entorno de trabajo básico para _pBuilder_.
+Esta página explica cómo configurar un entorno de trabajo básico para _pbuilder_.
 
 ## Requisitos previos
 
@@ -26,9 +26,11 @@ Si actualmente no dispone de un equipo con Tanglu pero dispone de uno que cuente
 sudo apt-get install pbuilder devscripts
 ```
 
-## Crear el entorno de trabajo para pBuilder
+## Crear el entorno de trabajo para pbuilder
 
 Acceda a una terminal y realice lo siguiente según sea el caso.
+
+> Recuerde siempre reemplazar el nombre de la versión, en este caso _"aequorea"_, con el nombre de la versión de Tanglu para la que desee empaquetar las aplicaciones.
 
 Desde Tanglu:
 
@@ -42,13 +44,31 @@ En Debian y derivadas:
 sudo pbuilder create --distribution aequorea --debootstrapopts --variant=buildd --mirror http://archive.tanglu.org/tanglu --debootstrapopts "--keyring=/usr/share/keyrings/tanglu-archive-keyring.gpg"
 ```
 
-**Recuerde siempre reemplazar el nombre de la versión, en este caso _"aequorea"_, con el nombre de la versión de Tanglu para la que desee empaquetar las aplicaciones.**
-
 ¡Eso es todo! Ahora debería de tener listo un entorno de trabajo que le permita empaquetar aplicaciones para Tanglu.
 
-## Development: Add staging suite
+## Agregar la _staging suite_
 
-If you want to upload packages to the Tanglu development version, you need to add the staging suite.
+Si desea subir sus paquetes para que se encuentren disponibles en la versión de desarrollo de Tanglu, necesita agregar la _staging suite_. Para ello siga los siguientes pasos:
 
-Si desea a la versión de desarrollo de Tanglu, necesita agregar el staging suite. Para hacerlo siga los siguientes pasos:
+  1. Inicie sesión desde pbuilder:
 
+``` bash
+DIST=aequorea pbuilder --login --save-after-login
+```
+
+  2. Edite el archivo _/etc/apt/sources.list_ añadiendo las siguientes líneas:
+
+``` apt_sources
+deb http://archive.tanglu.org/tanglu staging main contrib non-free
+```
+
+``` apt_sources
+deb-src http://archive.tanglu.org/tanglu staging main contrib non-free
+```
+
+  3. Salga del entorno de trabajo.
+  4. Actualice el entorno de trabajo:
+
+``` bash
+DIST=aequorea pbuilder --update
+```
