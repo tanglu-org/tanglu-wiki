@@ -30,8 +30,8 @@ Calendarios de lanzamientos de las distintas versiones de Tanglu:
 ## Empaquetamiento de aplicaciones
 
   * [PBuilderEnvironmentSetup-Quick](/PBuilderEnvironmentSetup-Quick) -- Cómo configurar un entorno de trabajo básico para _pBuilder_ en Tanglu.
-  * [Setup pBuilder Develop Environment](/Setup_pBuilder_Develop_Environment) -- Una versión más detallada sobre la configuración de un entorno de trabajo para _pBuilder_.
-  * [Building Packages](/Building_Packages) -- Un tutorial sobre la creación de paquetes para Tanglu.
+  * [Setup pBuilder Develop Environment](/Setup_pBuilder_Develop_Environment) -- Versión más detallada sobre la configuración de un entorno de trabajo para _pBuilder_.
+  * [Building Packages](/Building_Packages) -- Tutorial sobre la creación de paquetes para Tanglu.
   * [SyncDebianPackage](/SyncDebianPackage) -- Cómo sincronizar un paquete desde Debian.
 
 ## Creación de imágenes de disco
