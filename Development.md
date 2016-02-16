@@ -3,6 +3,8 @@ title: Development
 permalink: /Development/
 ---
 
+Localizations: [Español](/Development/es/)
+
 Tanglu Development
 ==================
 
@@ -15,6 +17,13 @@ General
 2.  [ChromodorisReleaseSchedule](/ChromodorisReleaseSchedule "wikilink")
 3.  [BartholomeaReleaseSchedule](/BartholomeaReleaseSchedule)
 4.  [AequoreaReleaseSchedule](/AequoreaReleaseSchedule)
+
+## Downloads
+
+  * [Stable release](http://tanglu.org/download/)
+  * [Docker image](https://hub.docker.com/r/tanglu/tanglu/)
+  * [VirtualBox images](https://virtualboximages.com/Tanglu+VirtualBox+VDI+Tanglu+Linux+Virtual+Computers)
+  * [Development Snapshots](http://yofel.net/tanglu/cdimage/daily-live/current/)
 
 Installation
 ------------
