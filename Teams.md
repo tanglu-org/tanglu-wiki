@@ -37,6 +37,7 @@ Localization / Local Communities
 -   [Esperanto](/Locale/Esperanto "wikilink")
 -   [Russian](/Locale/Russian "wikilink")
 -   [French](/Locale/French "wikilink")
+-   [Spanish](/Locale/Spanish "wikilink")
 
 Missing your language?
 
