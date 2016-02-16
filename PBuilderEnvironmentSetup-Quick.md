@@ -3,6 +3,8 @@ title: SetUpPBuilderEnvironment
 permalink: /SetUpPBuilderEnvironment/
 ---
 
+Localizations: [Español](/PBuilderEnvironmentSetup-Quick/es)
+
 Create Tanglu pBuilder Environment
 ==================================
 
