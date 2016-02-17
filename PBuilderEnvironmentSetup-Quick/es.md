@@ -50,13 +50,13 @@ sudo pbuilder create --distribution aequorea --debootstrapopts --variant=buildd 
 
 Si desea subir sus paquetes para que se encuentren disponibles en la versión de desarrollo de Tanglu, necesita agregar la _staging suite_. Para ello siga los siguientes pasos:
 
-  1. Inicie sesión desde pbuilder:
+  * Inicie sesión desde pbuilder:
 
 ``` bash
 DIST=aequorea pbuilder --login --save-after-login
 ```
 
-  2. Edite el archivo _/etc/apt/sources.list_ añadiendo las siguientes líneas:
+  * Edite el archivo _/etc/apt/sources.list_ añadiendo las siguientes líneas:
 
 ``` apt_sources
 deb http://archive.tanglu.org/tanglu staging main contrib non-free
@@ -66,8 +66,8 @@ deb http://archive.tanglu.org/tanglu staging main contrib non-free
 deb-src http://archive.tanglu.org/tanglu staging main contrib non-free
 ```
 
-  3. Salga del entorno de trabajo.
-  4. Actualice el entorno de trabajo:
+  * Salga del entorno de trabajo.
+  * Para finalizar, actualice el entorno de trabajo:
 
 ``` bash
 DIST=aequorea pbuilder --update
