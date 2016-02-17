@@ -11,10 +11,10 @@ Recursos útiles para los desarrolladores de Tanglu.
 
 Calendarios de lanzamientos de las distintas versiones de Tanglu:
 
-  1. [Tanglu 4 "Dasyatis"](/DasyatisReleaseSchedule)
-  2. [Tanglu 3 "Chromodoris"](/ChromodorisReleaseSchedule)
-  3. [Tanglu 2 "Bartholomea"](/BartholomeaReleaseSchedule)
-  4. [Tanglu 1 "Aequorea"](/AequoreaReleaseSchedule)
+  * [Tanglu 4 "Dasyatis"](/DasyatisReleaseSchedule)
+  * [Tanglu 3 "Chromodoris"](/ChromodorisReleaseSchedule)
+  * [Tanglu 2 "Bartholomea"](/BartholomeaReleaseSchedule)
+  * [Tanglu 1 "Aequorea"](/AequoreaReleaseSchedule)
 
 ## Descargas
 
